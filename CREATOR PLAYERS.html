@@ -1,383 +1,1127 @@
 <!DOCTYPE html>
-<html dir='ltr' lang='id' xml:lang='id' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html>
 <head>
-<style id='page-skin-1' type='text/css'><!--
-/* ======================================
-Plyr Template Blogger
-======================================
-Name      : Player Version 2
-Version   : 1.0
-Date      : 12-09-2022
-***************************************
-This theme is Premium.
-*************************************** */
-/*Main CSS */
-body{margin:0;padding:0}*,:after,:before{box-sizing:border-box}html{overflow-y:scroll}body{font-family:'Titillium Web',sans-serif}a{text-decoration:none;color:#1ab188;transition:.5s ease}a:hover{color:#179b77}#createIframe{display:none}#arsipin,#fluid_video_wrapper_video,body>.plyr{position:absolute;width:100%!important;height:100%!important}.jw-button-color:hover,.jw-open,.jw-progress,.jw-toggle,.jw-toggle:hover{color:#008fee!important}.jw-active-option{background-color:#008fee!important}.jw-progress{background:#008fee!important}.jw-skin-seven .jw-toggle.jw-off{color:#fff!important}.form{background:rgba(19,35,47,.9);padding:40px;max-width:600px;margin:40px auto;border-radius:4px;box-shadow:0 4px 10px 4px rgba(19,35,47,.3)}.tab-group{list-style:none;padding:0;margin:0 0 40px 0}.tab-group:after{content:"";display:table;clear:both}.tab-group li a{display:block;text-decoration:none;padding:15px;background:rgba(160,179,176,.25);color:#a0b3b0;font-size:20px;float:left;width:50%;text-align:center;cursor:pointer;transition:.5s ease}.tab-group li a:hover{background:#179b77;color:#fff}.tab-group .active a{background:#1ab188;color:#fff}.tab-content>div:last-child{display:none}h1{text-align:center;color:#fff;font-weight:300;margin:0 0 40px}label{color:rgba(255,255,255,.5);transition:all .25s ease;font-size:14px;margin-left:5px}label .req{margin:2px;color:#1ab188}input,select,textarea{font-size:22px;display:block;width:100%;height:100%;padding:5px 10px;background:0 0;background-image:none;border:1px solid #a0b3b0;color:#fff;border-radius:0;transition:border-color .25s ease,box-shadow .25s ease;margin-top:5px}select option{background-color:rgba(19,35,47,.9)}input:focus,select:focus,textarea:focus{outline:0;border-color:#1ab188}textarea{border:2px solid #a0b3b0;resize:vertical}.field-wrap{position:relative;margin-bottom:40px}.top-row:after{content:"";display:table;clear:both}.top-row>div{float:left;width:48%;margin-right:4%}.top-row>div:last-child{margin:0}.button{border:0;outline:0;border-radius:0;padding:15px 0;font-size:2rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;background:#1ab188;color:#fff;transition:all .5s ease;-webkit-appearance:none}.button:focus,.button:hover{background:#179b77}.button-block{display:block;width:100%}.forgot{margin-top:-20px;text-align:right}.box_item_ads_popup{position:fixed;z-index:999;left:0;margin:0 auto;text-align:center;right:0}.box_item_ads_popup img{max-width:350px;max-height:350px}.box_item_ads_popup .close-button{width:30%;margin:auto;padding:6px 10px;background:red;font-size:11px;color:#fff}.box_item_ads_popup{display:flex;justify-content:center;align-items:center;background:0 0;height:100%;width:460px;height:100%;opacity:0;transition:opacity .3s ease-in}@media only screen and (max-width:980px){.box_item_ads_popup img{max-width:300px;max-height:250px}.box_item_ads_popup{width:450px}}@media only screen and (max-width:480px){.box_item_ads_popup img{max-width:280px;max-height:170px}.box_item_ads_popup{width:335px}}@media only screen and (max-width:425px){.box_item_ads_popup img{max-width:250px;max-height:140px}.box_item_ads_popup{width:335px}}@media only screen and (max-width:320px){.box_item_ads_popup img{max-width:210px;max-height:120px}.box_item_ads_popup{width:335px}}
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tv_css.css">
+  <title>TV ENTRETENIMIENTO</title>
+  <script src="//ssl.p.jwpcdn.com/player/v/8.21.0/jwplayer.js"></script>
+  <script>
+    jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+    document.addEventListener('DOMContentLoaded', () => {
+      var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+      if (disclaimer) {
+        disclaimer.remove();
+      }
+    });
+  </script>
+  <style>
 
---></style>
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-
+  </style>
 </head>
-<body itemscope='itemscope' itemtype='https://schema.org/WebPage'>
-<div class='section' id='createIframe'><div class='widget Blog' data-version='2' id='Blog1'>
-<div class='form'>
-<ul class='tab-group'>
-<li class='tab active'><a href='#signup'>Create</a></li>
-<li class='tab'><a href='#login'>Code</a></li>
-</ul>
-<div class='tab-content'>
-<div id='signup'>
-<h1>Create Player</h1>
-<form>
-<div class='top-row'>
-<div class='field-wrap'>
-<label>Player<span class='req'>*</span></label>
-<select name='player' required='required'>
-<option value=''>Select Player</option>
-<option value='fluidplayer'>Fluid Player</option>
-<option value='jwpl'>JWPlayer</option>
-<option value='plyr'>Plyr.io</option>
-<option value='video'>Video</option>
-</select>
-</div>
-<div class='field-wrap'>
-<label>Provider<span class='req'>*</span></label>
-<select disabled='disabled' name='provider' required='required'>
-<option value=''>Select Provider</option>
-<option value='gdrive'>Google Drive</option>
-<option value='rand'>Random</option>
-<option value='yt'>Youtube</option>
-</select>
-</div>
-</div>
-<div class='field-wrap'>
-<label>Format Video<span class='req'>*</span></label>
-<input autocomplete='off' disabled='disabled' name='format' placeholder='disabled' type='text'/>
-</div>
-<div class='field-wrap'>
-<label>Link Video<span class='req'>*</span>
-</label>
-<input autocomplete='off' name='link' placeholder='Link Video' required='required' type='text'/>
-</div>
-<button class='button button-block' type='submit'>Confirm</button>
-</form>
-</div>
-<div id='login'>
-<h1>Your Code here</h1>
-<div class='field-wrap'>
-<label>Iframe Code<span class='req'>*</span></label>
-<textarea id='ifcode' type='text'></textarea>
-</div>
-<div class='field-wrap'>
-<label>Link<span class='req'>*</span></label>
-<textarea id='links' type='text'></textarea>
-</div>
-</div>
-</div>
-</div>
-</div></div>
-<script>/*<![CDATA[*/
-    const config = {
-      gDriveApikey: "AIzaSyByHjqLkjBORjFKwOaGx9rH2OGdlDT3okU",
-      poster: "",
-      license: "6231804437878254014",
-      
-    };
-    (function () {
-      var _0xcf87 = [
-    "href",
-    "location",
-    "_0cxb",
-    "https://www.blogger.com/feeds/7839582476785344835/posts/default/",
-    "?alt=json&callback=config._0cxb",
-    "function",
-    "innerHTML",
-    "documentElement",
-    "body",
-    "getElementsByTagName",
-    "",
-    "hostname",
-    "content",
-    "entry",
-    "\\",
-    "replaceAll",
-    "$t",
-    "url",
-    "some",
-    "parse",
-    "x",
-    '<div class="box_item_ads_popup" style="opacity:1"><div><a href="',
-    '" target="_blank" rel="nofollow"> <img src="',
-    "image",
-    '" rel="nofollow" alt="',
-    "title",
-    '" title="',
-    '"></a><div class="close-button" onClick="(function(){document.querySelector(\'.box_item_ads_popup\').remove()})();return false;">',
-    "close",
-    "Tutup Iklan",
-    "</div></div></div>",
-    "write",
-    "<iframe allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='true' frameborder='0' height='315' scrolling='no' src='",
-    "' width='560'></iframe>",
-    "link",
-    "createElement",
-    "rel",
-    "stylesheet",
-    "setAttribute",
-    "appendChild",
-    "head",
-    "script",
-    "src",
-    "load",
-    "onload",
-    "err",
-    "onerror",
-    "player",
-    "get",
-    "searchParams",
-    "remove",
-    "createIframe",
-    "getElementById",
-    "provider",
-    "format",
-    "fluidplayer",
-    "jwpl",
-    "video",
-    "gdrive",
-    "https://www.googleapis.com/drive/v3/files/",
-    "?alt=media&key=",
-    "gDriveApikey",
-    '<video id="video"><source src="',
-    '" type="',
-    '"/></video>',
-    "https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js",
-    "fply",
-    "poster",
-    '<div id="arsipin"></div>',
-    "https://content.jwplatform.com/libraries/zgIRUsiD.js",
-    "arsipin",
-    "captions",
-    "#FFFF00",
-    "setup",
-    '<video id="arsipin" controls poster="',
-    '"><source src="',
-    "plyr",
-    "https://cdn.plyr.io/3.7.2/plyr.css",
-    "yt",
-    '<div id="video" data-poster="',
-    '" data-plyr-provider="youtube" data-plyr-embed-id="',
-    '"></div>',
-    '<video id="video" playsinline controls data-poster="',
-    "https://cdn.plyr.io/3.7.2/plyr.js",
-    "#video",
-    "<p>xD</p>",
-    "ads",
-    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js",
-    "slow",
-    "show",
-    "#createIframe",
-    "change",
-    "name",
-    "attr",
-    "length",
-    "val",
-    "select[name=provider]",
-    "disabled",
-    "option[value=yt]",
-    "find",
-    "input[name=format]",
-    "placeholder",
-    "ID Youtube",
-    "input[name=link]",
-    "video/mp4",
-    "ID GDRIVE",
-    "Link Video",
-    "on",
-    "select",
-    ".form",
-    "preventDefault",
-    "serializeArray",
-    "search",
-    "value",
-    "append",
-    "each",
-    "#ifcode",
-    "#links",
-    "click",
-    'a[href="#login"]',
-    "submit",
-    "#signup form",
-    "#signup",
-    "reset",
-    "trigger",
-    "textarea",
-    "select[name=player]",
-    "active",
-    "addClass",
-    "parent",
-    "removeClass",
-    "siblings",
-    "hide",
-    "not",
-    ".tab-content > div",
-    "fadeIn",
-    ".tab a",
-    "license",
-];
-var _0x30fe = [
-    _0xcf87[0],
-    _0xcf87[1],
-    _0xcf87[2],
-    _0xcf87[3],
-    _0xcf87[4],
-    _0xcf87[5],
-    _0xcf87[6],
-    _0xcf87[7],
-    _0xcf87[8],
-    _0xcf87[9],
-    _0xcf87[10],
-    _0xcf87[11],
-    _0xcf87[12],
-    _0xcf87[13],
-    _0xcf87[14],
-    _0xcf87[15],
-    _0xcf87[16],
-    _0xcf87[17],
-    _0xcf87[18],
-    _0xcf87[19],
-    _0xcf87[20],
-    _0xcf87[21],
-    _0xcf87[22],
-    _0xcf87[23],
-    _0xcf87[24],
-    _0xcf87[25],
-    _0xcf87[26],
-    _0xcf87[27],
-    _0xcf87[28],
-    _0xcf87[29],
-    _0xcf87[30],
-    _0xcf87[31],
-    _0xcf87[32],
-    _0xcf87[33],
-    _0xcf87[34],
-    _0xcf87[35],
-    _0xcf87[36],
-    _0xcf87[37],
-    _0xcf87[38],
-    _0xcf87[39],
-    _0xcf87[40],
-    _0xcf87[41],
-    _0xcf87[42],
-    _0xcf87[43],
-    _0xcf87[44],
-    _0xcf87[45],
-    _0xcf87[46],
-];
-var _0x6942 = [
-    _0xcf87[47],
-    _0xcf87[48],
-    _0xcf87[49],
-    _0xcf87[50],
-    _0xcf87[51],
-    _0xcf87[52],
-    _0xcf87[53],
-    _0xcf87[54],
-    _0xcf87[34],
-    _0xcf87[10],
-    _0xcf87[55],
-    _0xcf87[56],
-    _0xcf87[57],
-    _0xcf87[58],
-    _0xcf87[59],
-    _0xcf87[60],
-    _0xcf87[61],
-    _0xcf87[62],
-    _0xcf87[63],
-    _0xcf87[64],
-    _0xcf87[31],
-    _0xcf87[65],
-    _0xcf87[66],
-    _0xcf87[67],
-    _0xcf87[68],
-    _0xcf87[69],
-    _0xcf87[70],
-    _0xcf87[71],
-    _0xcf87[72],
-    _0xcf87[73],
-    _0xcf87[74],
-    _0xcf87[75],
-    _0xcf87[76],
-    _0xcf87[77],
-    _0xcf87[78],
-    _0xcf87[79],
-    _0xcf87[80],
-    _0xcf87[81],
-    _0xcf87[82],
-    _0xcf87[83],
-    _0xcf87[84],
-    _0xcf87[45],
-    _0xcf87[85],
-    _0xcf87[86],
-    _0xcf87[87],
-    _0xcf87[88],
-    _0xcf87[89],
-    _0xcf87[90],
-    _0xcf87[91],
-    _0xcf87[92],
-    _0xcf87[93],
-    _0xcf87[94],
-    _0xcf87[95],
-    _0xcf87[96],
-    _0xcf87[97],
-    _0xcf87[98],
-    _0xcf87[99],
-    _0xcf87[100],
-    _0xcf87[101],
-    _0xcf87[102],
-    _0xcf87[103],
-    _0xcf87[104],
-    _0xcf87[105],
-    _0xcf87[106],
-    _0xcf87[107],
-    _0xcf87[108],
-    _0xcf87[109],
-    _0xcf87[110],
-    _0xcf87[111],
-    _0xcf87[112],
-    _0xcf87[113],
-    _0xcf87[114],
-    _0xcf87[115],
-    _0xcf87[0],
-    _0xcf87[116],
-    _0xcf87[117],
-    _0xcf87[118],
-    _0xcf87[119],
-    _0xcf87[120],
-    _0xcf87[121],
-    _0xcf87[122],
-    _0xcf87[123],
-    _0xcf87[124],
-    _0xcf87[125],
-    _0xcf87[126],
-    _0xcf87[127],
-    _0xcf87[128],
-    _0xcf87[129],
-    _0xcf87[130],
-    _0xcf87[131],
-    _0xcf87[132],
-    _0xcf87[133],
-    _0xcf87[134],
-    _0xcf87[135],
-    _0xcf87[136],
-    _0xcf87[5],
-    _0xcf87[137],
-    _0xcf87[6],
-    _0xcf87[8],
-];
-      eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('2B h=[""];k e(){w l[g[1]][g[0]]=a()}k t(t){j[g[2]]=o,f({y:`${h[0]}${g[3]}${h[0]}${t}${h[0]}${g[4]}${h[0]}`,1B:k(){g[5]==U e?e():(n[g[7]]||n[g[8]]||n[g[9]](g[8])[0])[g[6]]=g[10]}})}k i(){w l[g[1]][g[11]]}k o(t){R(g[12]S t[g[13]]){A o=t[g[13]][g[12]][g[16]][g[15]](g[14],g[10]);R(1C[g[19]](o)[g[18]]((e)=>{w e[g[17]]==i()})){w!0};e()}1b{e()}}k r(e){w 1z(e)}k a(){w r(g[20])}J n=m,l=1A,c=(l||n)[g[1]][g[0]],s=1d 1G(c),d=(e)=>{m[g[P]](`${h[0]}${g[21]}${h[0]}${e[g[17]]}${h[0]}${g[22]}${h[0]}${e[g[23]]}${h[0]}${g[24]}${h[0]}${e[g[25]]}${h[0]}${g[26]}${h[0]}${e[g[25]]}${h[0]}${g[27]}${h[0]}${e[g[28]]||g[29]}${h[0]}${g[1h]}${h[0]}`)},p=(e)=>{w`${h[0]}${g[X]}${h[0]}${e}${h[0]}${g[1j]}${h[0]}`},u=(e)=>{A t=m[g[N]](g[M]);t[g[I]](g[1e],g[1i]),t[g[I]](g[0],e),m[g[1a]][g[W]](t)},f=(e)=>{A t=m[g[N]](g[1v]);t[g[T]]=e[g[T]],g[C]S e&&(t[g[Y]]=e[g[C]]),g[V]S e&&(t[g[1f]]=e[g[V]]),m[g[8]][g[W]](t)};R(s[b[2]][b[1]](b[0])){m[b[5]](b[4])[b[3]]();A e=s[b[2]][b[1]](b[0]),t=s[b[2]][b[1]](b[6]),i=s[b[2]][b[1]](b[7]),o=s[b[2]][b[1]](b[8]),r=b[9];b[10]==e||b[11]==e||b[12]==e?(r=b[13]==t?`${h[0]}${b[14]}${h[0]}${o}${h[0]}${b[15]}${h[0]}${j[b[16]]}${h[0]}${b[9]}${h[0]}`:o,b[10]==e?(m[b[20]](`${h[0]}${b[17]}${h[0]}${r}${h[0]}${b[18]}${h[0]}${i}${h[0]}${b[19]}${h[0]}`),f({y:b[21],F:k(){j[b[22]]=1E(b[12],{1F:{1x:{1w:3,1y:!0,1T:!0},1U:!0,1R:!0,1S:!0,1V:!1,1Y:!0,1Z:j[b[23]]}})}})):b[11]==e?(m[b[20]](b[24]),f({y:b[25],F:k(){j[b[11]]=1X(b[26]),j[b[11]][b[29]]({1K:b[9],1H:[{1c:b[9],1Q:b[27],1N:!0}],1O:[{1c:r,1P:i}],1M:j[b[23]],1J:{1I:b[28],1L:17,1W:q}})}})):b[12]==e&&m[b[20]](`${h[0]}${b[1h]}${h[0]}${j[b[23]]}${h[0]}${b[P]}${h[0]}${r}${h[0]}${b[18]}${h[0]}${i}${h[0]}${b[19]}${h[0]}`)):b[X]==e?(u(b[1j]),b[M]==t?m[b[20]](`${h[0]}${b[N]}${h[0]}${j[b[23]]}${h[0]}${b[1e]}${h[0]}${o}${h[0]}${b[1i]}${h[0]}`):(r=b[13]==t?`${h[0]}${b[14]}${h[0]}${o}${h[0]}${b[15]}${h[0]}${j[b[16]]}${h[0]}${b[9]}${h[0]}`:o,m[b[20]](`${h[0]}${b[I]}${h[0]}${j[b[23]]}${h[0]}${b[P]}${h[0]}${r}${h[0]}${b[18]}${h[0]}${i}${h[0]}${b[19]}${h[0]}`)),f({y:b[W],F:k(){j[b[X]]=1d 1D(b[1a])}})):m[b[20]](j[b[1v]]||b[T]),j[b[C]]&&d(j[b[C]])}1b{f({y:b[Y],F:k(){$(b[2v])[b[1f]](b[V]),$(b[2A])[b[K]](b[2z])[b[1q]](b[1p],k(e){J t=$(x),i=t[b[q]](b[1u]);b[0]==i?0!=t[b[v]]()[b[2y]]?($(b[B])[b[q]]({E:!1,D:!0}),b[10]==t[b[v]]()||b[12]==t[b[v]]()||b[11]==t[b[v]]()?$(b[B])[b[K]](b[1g])[b[q]](b[H],!0):$(b[B])[b[K]](b[1g])[b[q]](b[H],!1)):$(b[B])[b[q]]({E:!0,D:!1}):b[6]==i&&(b[M]==t[b[v]]()?($(b[G])[b[q]]({E:!0,D:!1,Z:b[H]}),$(b[L])[b[q]](b[O],b[2g]),$(b[G])[b[v]](b[9])):($(b[G])[b[q]]({E:!1,D:!0,Z:b[9]}),$(b[G])[b[v]](b[2j]),b[13]==t[b[v]]()?$(b[L])[b[q]](b[O],b[2b]):$(b[L])[b[q]](b[O],b[2a])))}),$(b[1r])[b[2c]](k(e){e[b[1l]]();J t=$(x)[b[2e]]();s[b[2d]]=b[9],$[b[1s]](t,k(e,t){s[b[2]][b[2q]](t[b[1u]],t[b[2s]])}),$(b[2D])[b[v]](p(s[b[z]])),$(b[2p])[b[v]](s[b[z]]),$(b[2h])[b[1n]]()}),$(b[2o])[b[1q]](b[1n],k(e){e[b[1l]](),b[2n]==$(x)[b[q]](b[z])&&($(b[1r])[b[2l]](b[2m]),$(b[2t])[b[1s]](k(){$(x)[b[v]](b[9])}),$(b[2u])[b[v]](b[9])[b[1p]]()),$(x)[b[1o]]()[b[2r]](b[1t]),$(x)[b[1o]]()[b[2k]]()[b[2i]](b[1t]),Q=$(x)[b[q]](b[z]),$(b[2f])[b[2C]](Q)[b[2F]](),$(Q)[b[2E]](2w)})}})};b[1m]==U t&&j[b[1k]]?t(j[b[1k]]):b[1m]==U e?e():n[b[2x]][b[2G]]=b[9]',62,167,'|||||||||||_0x6942|||||_0x30fe|_0x6e26||config|function||document||||50|||||52|return|this|src|73|let|53|43|required|disabled|load|57|54|38|const|56|60|34|35|58|31|target|if|in|42|typeof|45|39|32|44|placeholder|||||||||||40|else|file|new|36|46|55|30|37|33|96|67|95|76|87|48|64|79|72|85|49|41|autoHideTimeout|controlBar|animated|atob|window|err|JSON|Plyr|fluidPlayer|layoutControls|URL|tracks|color|captions|title|fontSize|image|default|sources|type|kind|allowTheatre|fillToContainer|autoHide|allowDownload|playbackRateEnabled|backgroundOpacity|jwplayer|playPauseAnimation|posterImage|||||||||||63|62|78|69|68|92|59|77|88|61|89|82|81|80|94|75|71|86|70|83|84|47|600|98|51|65|66|var|91|74|93|90|97'.split('|'),0,{}));
-    })();
-  /*]]>*/</script>
+<body>
+<div class="father">
+    <h1>UN POCO DE TODO</h1>
+    <div class="buscar">
+        <input type="text" id="buscar-canal" placeholder="Buscar canal...">
+      </div>
+    
+    <div class="reproductor">
+      <button onclick="transmitirVideo()"><i class="icon fab fa-chromecast"></i></button>
+        <div id="player"></div>
+        <p id="nombre-m3u"></p>
+      <button class="control" onclick="cambiarCanal(-1)">Anterior</button>
+      <button class="control" onclick="cambiarCanal(1)">Siguiente</button>
+    </div>
 
+    <div id="lista-canales"></div>
+</div>
+  <script>
+    var playerInstance;
+    var canalesJSON = [
+    {
+  "name": "Canal de la Ciudad",
+  "url": "#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
+},
+
+{
+  "name": "Canal Institucional TV",
+  "url": "https://streaming.rtvc.gov.co/TV_CanalInstitucional_live/smil:live.smil/playlist.m3u8"
+},
+{
+  "name": "RT en Español",
+  "url": "https://rt-esp.rttv.com/live/rtesp/playlist.m3u8"
+},
+{
+  "name": "DW en Español",
+  "url": "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8"
+},
+{
+  "name": "La 2",
+  "url": "https://ztnr.rtve.es/ztnr/1688885.m3u8"
+},
+{
+  "name": "Canal 24 Horas",
+  "url": "https://ztnr.rtve.es/ztnr/1694255.m3u8"
+},
+{
+  "name": "Señal Colombia",
+  "url": "https://streaming.rtvc.gov.co/TV_Senal_Colombia_live/smil:live.smil/playlist.m3u8"
+},
+{
+  "name": "TDI Colombia",
+  "url": "https://play.amelbasoluciones.co:3971/live/tdicolombiatvlive.m3u8"
+},
+{
+  "name": "America",
+  "url": "#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
+},
+
+{
+  "name": "Canal 8 Mar del Plata",
+  "url": "https://stream.arcast.com.ar/c8mdp/ngrp:c8mdp_all/playlist.m3u8"
+},
+{
+  "name": "TV Publica",
+  "url": "#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
+},
+{
+  "name": "Canal 10 Mar del Plata",
+  "url": "#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
+},
+{
+  "name": "El Nueve",
+  "url": "https://2a1773fcc0c94a639b422d1cf7ba14b7.mediatailor.us-east-1.amazonaws.com/v1/master/4c8323052bc3dbd9aa2eba0b638d8495561e8377/JW-Octubre-Channel09/live/channel09/live.isml/.m3u8"
+},
+{
+  "name": "El Trece",
+  "url": "https://live-01-02-eltrece.vodgc.net:443/eltrecetv/tracks-v3a1/mono.m3u8"
+},
+{
+  "name": "TN",
+  "url": "https://live-01-01-tn.vodgc.net/TN24/index.m3u8"
+},
+{
+  "name": "A24",
+  "url": "#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
+},
+{
+  "name": "C5N",
+  "url": "https://ythls.onrender.com/channel/UCFgk2Q2mVO1BklRQhSv6p0w.m3u8"
+},
+{
+  "name": "Cronica HD",
+  "url": "#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
+},
+{
+  "name": "Canal 26",
+  "url": "http://live-edge01.telecentro.net.ar/live/smil:c26.smil/playlist.m3u8"
+},
+{
+  "name": "La Nacion+",
+  "url": "https://ythls.onrender.com/channel/UCba3hpU7EFBSk817y9qZkiA.m3u8"
+},
+{
+  "name": "Telemax",
+  "url": "http://live-edge01.telecentro.net.ar/live/smil:tlx.smil/master.m3u8"
+},
+{
+  "name": "Telesur (Stream 1)",
+  "url": "https://cdnesmain.telesur.ultrabase.net/mbliveMain/480p/playlist.m3u8"
+},
+{
+  "name": "Telesur (Stream 2)",
+  "url": "https://cdnesmain.telesur.ultrabase.net/mbliveMain/480p/chunklist.m3u8"
+},
+{
+  "name": "TVPeru (No activo 24/7)",
+  "url": "https://cdnh8.iblups.com/hls/R9WtilpKKB.m3u8"
+},
+{
+  "name": "TVPeru Internacional (No activo 24/7)",
+  "url": "http://cdnh4.iblups.com/hls/irtp.m3u8"
+},
+{
+  "name": "24/7 Canal de Noticias",
+  "url": "https://panel.dattalive.com/6605140/6605140/playlist.m3u8"
+},
+{
+  "name": "France 24 Español",
+  "url": "https://ythls.onrender.com/channel/UCUdOoVWuWmgo1wByzcsyKDQ.m3u8"
+},
+{
+  "name": "France 24 Français",
+  "url": "https://ythls.onrender.com/channel/UCCCPCZNChQdGa9EkATeye4g.m3u8"
+},
+{
+  "name": "France 24 English",
+  "url": "https://ythls.onrender.com/channel/UCQfwfsi5VrQ8yKZ-UWmAEFg.m3u8"
+},
+{
+  "name": "Euronews",
+  "url": "https://euronews-euronews-spanish-2-mx.samsung.wurl.com/manifest/playlist.m3u8"
+},
+{
+  "name": "IP",
+  "url": "https://octubre-live.cdn.vustreams.com:443/live/ip/live.isml/live-audio_1=128000-video=729984.m3u8"
+},
+{
+  "name": "El Destape",
+  "url": "https://ythls.onrender.com/channel/UCgOvQwLB387CWMrseINhyCg.m3u8"
+},
+{
+  "name": "Extra TV",
+  "url": "https://ythls.onrender.com/channel/UCy3MW5Goy1epjhvtjalzbKg.m3u8"
+},
+{
+  "name": "TVPeru Noticias (No activo 24/7)",
+  "url": "https://cdnh8.iblups.com/hls/RMuwrdk7M9.m3u8"
+},
+{
+  "name": "Canal Rural",
+  "url": "https://cda2.alsolnet.com/elrural/live/playlist.m3u8"
+},
+{
+  "name": "El Garage TV",
+  "url": "http://186.0.233.76:1935/Garage/smil:garage.smil/master.m3u8"
+},
+{
+  "name": "Tastemade en Español",
+  "url": "https://tastemade-es8intl-roku.amagi.tv/playlist.m3u8"
+},
+{
+  "name": "A3 Cine",
+  "url": "https://live.atresmediainternacional.com/ATRESMEDIA/a3cine-index.m3u8"
+},
+{
+  "name": "Tec TV",
+  "url": "https://tv.initium.net.ar:3939/live/tectvmainlive.m3u8"
+},
+{
+  "name": "Latino Kids TV",
+  "url": "https://6362ca6f1fc28.streamlock.net:443/8062/8062/playlist.m3u8?PlaylistM3UCL"
+},
+{
+  "name": "Pequeradio TV",
+  "url": "https://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8"
+},
+{
+  "name": "PlanetaTV Kids",
+  "url": "https://tls-cl.cdnz.cl/planetatvkids/live/playlist.m3u8?PlaylistM3UCL"
+},
+{
+  "name": "Anime Zone TV",
+  "url": "http://animezonetv.net/hls/stream.m3u8?PlaylistM3UCL"
+},
+{
+  "name": "AnimeStation",
+  "url": "https://stream.ichibantv.ga:3741/live/aniplustvlive.m3u8?PlaylistM3UCL"
+},
+{
+  "name": "Locomotion",
+  "url": "http://51.222.85.85:81/hls/loco/index.m3u8?PlaylistM3UCL"
+},
+{
+  "name": "AN24",
+  "url": "https://5f700d5b2c46f.streamlock.net/tvan24/tvan24/playlist.m3u8"
+},
+{
+  "name": "CM",
+  "url": "#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
+},
+{
+  "name": "Latin Zone TV",
+  "url": "https://cdn.streamingcpanel.com:3784/live/latinzonetvlive.m3u8?PlaylistM3UCL"
+},
+{
+  "name": "MusicTop",
+  "url": "http://live-edge01.telecentro.net.ar/live/smil:musictop.smil/playlist.m3u8"
+},
+{
+  "name": "Tierramia TV",
+  "url": "http://live-edge01.telecentro.net.ar/live/smil:trm.smil/playlist.m3u8"
+},
+{
+  "name": "Vorterix",
+  "url": "#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
+},
+{
+  "name": "canalLuz",
+  "url": "#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
+},
+{
+  "name": "Orbe 21",
+  "url": "https://cdn2.zencast.tv:30443/orbe/orbe21smil/playlist.m3u8"
+},
+{
+  "name": "Argentinisima Satelital",
+  "url": "https://stream1.sersat.com/hls/argentinisima.m3u8"
+},
+{
+  "name": "Hola TV",
+  "url": "https://live.atresmediainternacional.com/ATRESMEDIA/holatv-720.m3u8"
+},
+{
+  "name": "Net TV (Stream 1)",
+  "url": "https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8"
+},
+{
+  "name": "Net TV (Stream 2)",
+  "url": "https://unlimited6-cl.dps.live/nettv/nettv.smil/playlist.m3u8"
+},
+{
+  "name": "TVU La Plata",
+  "url": "https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8"
+},
+{
+  "name": "FM 99.9 Mar del Plata",
+  "url": "https://fm999.info/test/index.m3u8"
+},
+{
+  "name": "Radio Disney Argentina 94.3",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_ARG_BA_ADP.m3u8?dist=web-radiodisney"
+},
+{
+  "name": "5RTv",
+  "url": "https://api.new.livestream.com/accounts/22636012/events/8242619/live.m3u8"
+},
+{
+  "name": "5TV",
+  "url": "http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8"
+},
+{
+  "name": "Camaras de Villa Gesell (Av. 3 y 104)",
+  "url": "http://cam104y3.gesell.com.ar/playlist.m3u8"
+},
+{
+  "name": "Camaras de Villa Gesell (Buenos Aires y Playa)",
+  "url": "http://cambsasyplaya.gesell.com.ar/playlist.m3u8"
+},
+{
+  "name": "Camaras de Villa Gesell (La Pinocha)",
+  "url": "http://camlapinocha.gesell.com.ar/playlist.m3u8"
+},
+{
+  "name": "Canal 3 Pinamar",
+  "url": "https://wowza.telpin.com.ar:1935/canal3/canal3.stream/playlist.m3u8"
+},
+{
+  "name": "Canal 4 Jujuy (Stream 1)",
+  "url": "http://190.52.32.13:1935/canal4/smil:manifest.smil/playlist.m3u8"
+},
+{
+  "name": "Canal 4 Jujuy (Stream 2)",
+  "url": "https://5cd577a3dd8ec.streamlock.net/canal4/smil:manifest.smil/playlist.m3u8"
+},
+{
+  "name": "Canal 4 Teleaire San Martin",
+  "url": "https://stmvideo2.livecastv.com/canal4/canal4/playlist.m3u8"
+},
+{
+  "name": "Canal 6 Moreno",
+  "url": "https://stream.arcast.com.ar/canal6moreno/canal6moreno/playlist.m3u8"
+},
+{
+  "name": "Canal 9 Multivision",
+  "url": "http://panel.dattalive.com:1935/8250/8250/playlist.m3u8"
+},
+{
+  "name": "Canal 9 Rio Cuarto",
+  "url": "http://streamcasthd.com:1935/canal9riocuartotv/canal9riocuartotv/playlist.m3u8"
+},
+{
+  "name": "Canal 10 Cordoba",
+  "url": "https://stream.arcast.live/canal10/ngrp:canal10_all/playlist.m3u8"
+},
+{
+  "name": "Canal 10 Rio Negro",
+  "url": "http://panel.dattalive.com:1935/8204/8204/playlist.m3u8"
+},
+{
+  "name": "Canal 11 La Rioja",
+  "url": "http://stmv4.questreaming.com/fenixlarioja/fenixlarioja/playlist.m3u8"
+},
+{
+  "name": "Canal 12 Puerto Madryn",
+  "url": "https://5f700d5b2c46f.streamlock.net/madryntv/madryntv/playlist.m3u8"
+},
+{
+  "name": "Canal 13 La Rioja",
+  "url": "http://arcast.net:1935/mp/mp/playlist.m3u8"
+},
+{
+  "name": "Canal 22 Web",
+  "url": "https://5f700d5b2c46f.streamlock.net/canal22/canal22/playlist.m3u8"
+},
+{
+  "name": "Canal 79 La Costa",
+  "url": "https://streamconex.com:1936/lacosta/lacosta/playlist.m3u8"
+},
+{
+  "name": "Canal 79 Mar del Plata",
+  "url": "https://streamconex.com:1936/mardelplata/mardelplata/playlist.m3u8"
+},
+{
+  "name": "Canal 79 Puan",
+  "url": "https://streamconex.com:1936/puan/puan/playlist.m3u8"
+},
+{
+  "name": "Canal 79 San Juan",
+  "url": "https://streamconex.com:1936/sanjuan/sanjuan/playlist.m3u8"
+},
+{
+  "name": "Canal 79 Santa Clara del Mar",
+  "url": "https://streamconex.com:1936/santaclara/santaclara/playlist.m3u8"
+},
+{
+  "name": "Canal 79 Villa Maza",
+  "url": "https://streamconex.com:1936/villamaza/villamaza/playlist.m3u8"
+},
+{
+  "name": "Canal Provincial",
+  "url": "https://streaming.telered.com.ar/provincial/streaming/mystream.m3u8"
+},
+{
+  "name": "Canal TDC",
+  "url": "https://5e7cdf2370883.streamlock.net/tdconline/tdconline/playlist.m3u8"
+},
+{
+  "name": "Canal XFN",
+  "url": "https://streamconex.com:1936/canalxfn/canalxfn/playlist.m3u8"
+},
+{
+  "name": "Chaco TV",
+  "url": "https://5b7ecefab6325.streamlock.net/Streamtv/chacotv/playlist.m3u8"
+},
+{
+  "name": "Chacra TV",
+  "url": "https://s8.stweb.tv/chacra/live/playlist.m3u8"
+},
+{
+  "name": "Cinco TV",
+  "url": "https://videostream.shockmedia.com.ar:19360/cincotv/cincotv.m3u8"
+},
+{
+  "name": "Ciudad TV Resistencia",
+  "url": "http://coninfo.net:1935/chacodxdtv/live/playlist.m3u8"
+},
+{
+  "name": "CPE TV",
+  "url": "https://stream.arcast.live/cpe/ngrp:cpe_all/playlist.m3u8"
+},
+{
+  "name": "Crossing TV",
+  "url": "https://vivo.solumedia.com:19360/crossing/crossing.m3u8"
+},
+{
+  "name": "F5 Play Miramar",
+  "url": "https://videostream.shockmedia.com.ar:19360/f5tv2/f5tv2.m3u8"
+},
+{
+  "name": "Neox TV Salta",
+  "url": "https://streamcasthd.com:19360/sonicaargentina/sonicaargentina.m3u8"
+},
+{
+  "name": "Power TV",
+  "url": "https://wowza.telpin.com.ar:1935/live-powerTV/power.stream/playlist.m3u8"
+},
+{
+  "name": "RTN (Stream 1)",
+  "url": "http://media.neuquen.gov.ar/rtn/television/playlist.m3u8"
+},
+{
+  "name": "RTN (Stream 2)",
+  "url": "http://media.neuquen.gov.ar/rtn/television/media.m3u8"
+},
+{
+  "name": "Telenord Corrientes",
+  "url": "http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8"
+},
+{
+  "name": "Telpin TV",
+  "url": "https://wowza.telpin.com.ar:1935/telpintv/smil:ttv.stream.smil/playlist.m3u8"
+},
+{
+  "name": "Pluto TV Cine Estelar (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcde437229eff00091b6c30/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Cine Acción (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcb62e63d4d8f0009f36881/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Estrellas de Acción (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5e972a21ad709d00074195ba/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Adrenalina Freezone (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61b793ccf571b80007b7a610/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Cine Comedia (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcdde78f080d900098550e4/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Cine Drama (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcddfcb229eff00091b6bdf/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Cine Romance (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dd7ea2aeab5230009986735/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Cine Suspenso (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ddc4e8bcbb9010009b4e84f/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Cine Crimen (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/624af40c004f8000079b784d/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Cine Terror (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcddf1ed95e740009fef7ab/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Sci-Fi (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f2817d3d7573a00080f9175/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Runtime (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62c5d80dc6de440007e033eb/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Filmstream (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fcea359e533cb0007215c71/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Nuestro Cine (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5defde6d6c07b50009cf0757/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Cine Clásico (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/609059dc63be6e0007b4eca6/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Cine Familia (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dd6ddb30a1d8a000908ed4c/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Paramount+ Presenta (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/600728952b1776000776526d/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Series (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcde1317578340009b751d0/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "The Night Shift (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/624f4d4a4321e200073f46e0/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Series Retro (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5de802659167b10009e7deba/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Hechizada (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/631fb6be21b7440007b9f606/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Dramas Coreanos (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6185a9a88b2ce30007de5128/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Los Tres Chiflados (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f85f1dc1418bd0007e11eb9/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Retro Cartoons (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60142258a54aeb0007751c15/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "The Ed Sullivan Show (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62e017e44823db000726cd9a/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Vive Kanal D Drama (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/639751f81a36b400072b8f5a/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Series Latinas (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dd837642c6e9300098ad484/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV España (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ffe17e3d765170007c3a4fe/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Señorita Pólvora (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61f323397027f90007542bc3/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "El Mariachi (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/612f8b455ed5810007170b5f/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Rock Story (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61f159209fcc3800076ed4a1/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Novelas (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcde0cc2efd2700090b7ff4/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Sin Tetas No Hay Paraíso (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/604bdf4e6d0abc0007ba77ad/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Chilevision Contigo (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62aa5740a47b6c000769f407/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Reviví Gran Hermano (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6320ddef274b1b0007b2ee88/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Telefe Pluto TV (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/613237a1c9e0db0007a91350/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Rincón de Luz (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63f6294449839300085c4bd2/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Chiquititas (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/620e67a63b5e370007e06bb2/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Susana Giménez (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6132429ec9e0db0007a91425/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Telefe Hits (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5de91cf02fc07c0009910465/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Nosey Escándalos (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f9afb01816137000737f799/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "MTV Pluto TV (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fab088b3279760007d4e4fd/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "MTV Classic (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5de91b7ea86ee60009d89e75/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "MTV Shore (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61a52615cbef2500072876e2/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "MTV Con Mi Ex (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/638693db857364000781b471/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "MTV Ridiculousness (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5e98a911c881310007d7aae2/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "MTV Teen Mom (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/620fd9f4afb9a80007a9c6d5/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "MTV Catfish (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/625461ef01f27a0007976ad1/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Younger (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/619d56d9fa3070000709e3f7/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Nick Teen (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fab09a8749b1a00077d35d2/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Kenan y Kel (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fcea93ffcf94500071c4b2f/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Nickelodeon iCarly (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/620ff0a01f9e8700076c6f9d/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Teen (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dd6de52b9914200091f047a/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Iron Chef (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/615b9855c6b58b000724477f/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "MasterChef (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5e3ddbd27091820009f86dd9/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Hells Kitchen (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6095ad97351eb0000754c1e6/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Minuto Para Ganar (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5e46e64dc73db400094b5f0b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Boom (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6099600015e88c0007ecda25/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Competencias (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dd6d935d000120009bc1132/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Wipe Out (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ed6828192e8b3000743ef61/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "CBS News (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62310d5a5dc9550007c6f580/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Euronews Español (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/619d59b7cbef25000728221c/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Telefe Noticias (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f523aa5523ae000074745ec/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Chilevision Noticias (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61f94a2866401100074e9dee/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "TeleFórmula (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63d2c140c111bc0008cb890b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Reality (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcde197f6591d0009839e04/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Empeños a lo bestia (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f23102d5e239d00074b092a/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Dog el cazarrecompensas (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f9992c685a2a80007fa414a/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Maestros de la Ilusión (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6254ab6fa74f8e0007ba6879/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Misterios (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcde2f53449c50009b2b4dc/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Historias de Ultratumba (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f4d3696d938c900072679fd/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Misterios Medicos (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f230e416b68ff00075b0139/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Mi Obsesión Favorita (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6109ab25b84d6a0007504886/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Vida Real (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5df265697ec3510009df1ef0/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Naturaleza (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dd85eac039bba0009e86d1d/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Paisajes por Stingray (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f4fed840a2764000720d966/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Animales (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dd834c66fe2ca0009303b8d/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "El Encantador de Perros (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61099f2b40d0640007fc5aa2/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Aventura (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ddc266f80e3550009136843/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Ice Pilots (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62154548a2be360007cb02f0/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Velocidad (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dd6dc7480e3550009133d4a/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Historia (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5de5758e1a30dc00094fcd6c/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Smithsonian Channel Pluto TV (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63a084934734f30007457b2c/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Ciencia (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dd8364ea1d6780009929902/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Investiga (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcde27ffae9520009c0c75a/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Cazador de Homicidas (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6109a9f5531b840007a4a187/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Los archivos del FBI (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5e67d41b93312100076f3fca/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Archivos Forenses (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5efb8c19b2678b000780d032/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "The New Detectives (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ea71d48af1d0b0007d837f4/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Misterios sin Resolver (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f610042272f68000867685b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Anime (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcde17bf6591d0009839e02/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Animé Acción (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5e6a4d875d7ccf0007cc2cf1/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Naruto (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ee92e72fb286e0007285fec/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Death Note (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/626c2ed933a2890007e91422/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Yu-Gi-Oh (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fceaab478f2af00080ff51f/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Beyblade (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/632119a92c3b880007d3f5dc/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "One Piece (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ff4b9ccf938f8000779eb99/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Anime Héroes (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6079be62f9f8d6000783c8a4/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Tokusato (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ff608e60e2996000768c366/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV E-Sports (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ff3934600d4c7000733ff49/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "ESR 24/7 (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fb554d87a0c480007c8dada/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Telefe Deportes (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/638df7f42b4fea0007f8af98/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Deportes (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcde07af1c85b0009b18651/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "FUEL TV (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6144d313b34fbf0007107714/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "La Selección (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63211ba9cad976000794f988/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Peleas (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5e98b0447665f200078caded/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Lucha Libre AAA (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f99a772c54853000797bf18/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "ITV Deportes (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63f7e3f9dff38e00082a57af/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Motorvision TV (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60e5ea9a9bb4200008376f76/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "FailArmy (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ebaccf1734aaf0007142c86/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "The Pet Collective (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ebacbcae43a6d000787b88e/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Humor (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5e8397936791b30007ebb5a7/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Schitt's Creek (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/620ac814864949000724fb77/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Comedy Central Pluto TV (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ffcc21a432945000762d06b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Backdoor (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/633dc8684bf50b00074a46b1/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Comedy Central South Park (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/609ae5cd48d3200007b0a98e/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Daria (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62d0895ebe7a970008785244/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "La Familia del Barrio (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62d08af527ce19000731eaa0/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Viajes (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcddfbdb7cf0e0009ae09ea/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Cocina (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcde0657444a40009cd2422/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Recetas (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/609062295c2b8f0007199e7a/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Tastemade (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f998c1fc54853000797bacd/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Hogar (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dd6ab8056beb000091fc6b6/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Fashionstream (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ee8d84bfb286e0007285aad/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Fashion TV (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63974ebedcd9100008c2f59c/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Baby Shark TV (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/619d5e6a093e7c0007489211/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Babyfirst (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ebac49ce4dc8b00078b23bc/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Junior (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dcde2ac4bc6c500094ab45b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Nick Jr. Club (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ddd7cb2cbb9010009b4fe32/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Las Pistas de Blue (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f9996533c9de3000759ccb5/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Barney (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f29ada4bdaebd000708d49d/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Babar (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5e67e20c93312100076f3ffe/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "El Reino Infantil (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f4d3d06fb60d8000781fce8/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Anime Kids (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/636e83511fa9600007e5ae19/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Pluto TV Kids (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5dd6dae8ce788b0009eaf77b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Bob Esponja Pantalones Cuadrados (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6254598f5083f800076d8563/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Los Padrinos Mágicos (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6322099c822bbc00074857db/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Las Tortugas Ninja (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63dd5d7a4e83e700088fbca8/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Nick Clásico (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ddd7c348520b40009c347e2/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Rugrats (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ea7215005d66d0007e8128a/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Nickelodeon Rocket Power (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6202ab549654c800076ee13f/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Conciertos por Stingray (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f85ca40eda1b10007b967cd/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "Karaoke por Stingray (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f85cf621d6d2200079f1de0/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "MTV Biggest Pop (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6047fabfce6e8e00070bcc9f/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+{
+  "name": "MTV Spankin' New (Pluto TV)",
+  "url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6047fd723b5bd00007de7092/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+},
+];
+
+    var canalActual = 0;
+    function setupPlayer() {
+      playerInstance = jwplayer("player");
+    }
+  
+    function cambiarCanal(direccion) {
+      canalActual += direccion;
+      if (canalActual < 0) {
+        canalActual = canalesJSON.length - 1;
+      } else if (canalActual >= canalesJSON.length) {
+        canalActual = 0;
+      }
+      mostrarNombreCanal(canalesJSON[canalActual].name);
+      reproducirCanal(canalesJSON[canalActual].url);
+      resaltarCanalActual();
+    }
+  
+    function reproducirCanal(url) {
+      playerInstance.setup({
+        playlist: [{
+          title: "",
+          sources: [{
+            default: false,
+            type: "hls",
+            file: url
+          }]
+        }],
+        aspectratio: "16:9",
+        logo: {
+          link: '',
+        },
+        cast: {},
+        sharing: {}
+      });
+    }
+  
+    function mostrarNombreCanal(nombre) {
+      document.getElementById('nombre-m3u').innerText = nombre;
+    }
+  
+    function transmitirVideo() {
+      const videoURL = canalesJSON[canalActual].url;
+      const wvcURL = `wvc-x-callback://open?url=${encodeURIComponent(videoURL)}`;
+      window.open(wvcURL, '_blank');
+    }
+  
+    function crearBotonesCanales() {
+      var botonesCanalesContainer = document.getElementById('lista-canales');
+      botonesCanalesContainer.innerHTML = ""; // Limpiar contenido anterior
+  
+      canalesJSON.forEach((canal, index) => {
+        var botonCanal = document.createElement('button');
+        botonCanal.innerText = canal.name;
+        botonCanal.onclick = function() {
+          seleccionarCanal(index);
+        };
+        botonesCanalesContainer.appendChild(botonCanal);
+      });
+  
+      resaltarCanalActual();
+    }
+  
+    function filtrarCanalesPorNombre(nombreBuscado) {
+      var botonesCanales = document.getElementById('lista-canales').getElementsByTagName('button');
+      for (var i = 0; i < botonesCanales.length; i++) {
+        var nombreCanal = botonesCanales[i].innerText.toLowerCase();
+        if (nombreCanal.includes(nombreBuscado.toLowerCase())) {
+          botonesCanales[i].style.display = "block";
+        } else {
+          botonesCanales[i].style.display = "none";
+        }
+      }
+    }
+  
+    document.getElementById('buscar-canal').addEventListener('input', function(event) {
+      var textoBuscado = event.target.value;
+      filtrarCanalesPorNombre(textoBuscado);
+    });
+  
+    function seleccionarCanal(index) {
+      canalActual = index;
+      mostrarNombreCanal(canalesJSON[canalActual].name);
+      reproducirCanal(canalesJSON[canalActual].url);
+      resaltarCanalActual();
+    }
+  
+    function resaltarCanalActual() {
+      var botonesCanales = document.getElementById('lista-canales').getElementsByTagName('button');
+      for (var i = 0; i < botonesCanales.length; i++) {
+        botonesCanales[i].classList.remove('current');
+      }
+      botonesCanales[canalActual].classList.add('current');
+    }
+  
+    // Llamada a la función para crear los botones de canales al cargar la página
+    crearBotonesCanales();
+    setupPlayer();
+    cambiarCanal(0);
+  </script>
 </body>
 </html>
